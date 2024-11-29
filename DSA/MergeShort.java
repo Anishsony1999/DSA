@@ -1,4 +1,4 @@
-package DSA;
+
 
 public class MergeShort {
 
@@ -9,11 +9,7 @@ public class MergeShort {
         for(int i:arr)System.out.print(i+",");
     }
 
-
-
-
-    void merge(int arr[], int l, int m, int r)
-    {
+    void merge(int arr[], int l, int m, int r){
         int n1=m-l+1;
         int n2=r-m;
         int[] leftArr =new int[n1];
@@ -44,11 +40,9 @@ public class MergeShort {
              arr[k]=rightArr[j];
              k++;
              j++;
-         }
-         
+         } 
     }
-    void mergeSort(int arr[], int l, int r)
-    {
+    void mergeSort(int arr[], int l, int r){
         //code here
         if(l>=r)return;
         int mid = (l+r)/2;

@@ -1,13 +1,13 @@
-package DSA;
+
 
 public class ArraySort {
     public static void main(String[] args) {
         int[] arr ={2,5,245,78,345,253,12,3};
-        int l = arr.length;
+        int leg = arr.length;
 
-        for(int i=0;i<l-1;i++){
+        for(int i=0;i<leg-1;i++){  // i =0   
             int min = i;
-            for(int j=i;j<l;j++){
+            for(int j=i+1;j<leg;j++){
                 if(arr[j]<arr[min]) min=j;
             }
             if (min != i) {
