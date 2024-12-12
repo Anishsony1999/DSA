@@ -13,7 +13,8 @@ public class NumberHasing {
         for(int i=0;i<arr.length;i++){
             int key = arr[i];
             int val = 0;
-            if(map.containsKey(key))val=map.get(key);
+            if(map.containsKey(key))
+                val=map.get(key);
             val++;
             map.put(key,val);
         }
